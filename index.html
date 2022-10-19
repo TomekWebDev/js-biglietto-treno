@@ -22,9 +22,14 @@
   <main class="d-flex">
     <div class="input-user left-top-part container w-50 bg-info">
 
-        <input type="text" id="inputDistance">
-        <input type="text" id="inputAge">
-        <button onclick="outputPrice">Submit</button>
+        <form onsubmit="return false">
+
+            <input type="text" placeholder="Distance" id="distance">
+            <input type="text" placeholder="Age" id="age">
+            <button type="button" onclick="calculateTotalPrice();">Get Value</button>
+
+        </form>
+       
 
     </div>
 
